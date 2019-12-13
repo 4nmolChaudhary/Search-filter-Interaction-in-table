@@ -1,0 +1,119 @@
+@font-face
+{
+  font-family: "lexend";
+  src:url("../fonts/LexendDeca-Regular.ttf");
+}
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+    font-family: "lexend";
+    font-size: 20px;
+    background: linear-gradient(45deg, #4158d0, #c850c0);
+    height: 100vh;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bar{
+    width:1100px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+#search{
+    width:890px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #121212;
+    padding: 20px 30px;
+    font-family: "lexend";
+    font-size: 16px;
+}
+#search:focus{
+    box-shadow: 0 0 5px rgb(48, 49, 49);
+    border: 1px solid rgb(28, 29, 29);
+}
+.tab{
+    width: 1100px;
+    height: 800px; 
+    overflow: scroll;
+    border-radius: 10px;     
+}
+.tab::-webkit-scrollbar {
+    display: none;
+}
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+}
+.tabHead{
+    background: #121212;
+    color: #fff;
+    text-align: left;
+    position: sticky;
+    top: 0;
+}
+
+th,td{
+    padding: 20px 30px;
+    
+}
+th{
+    background: #121212;
+    color: #fff;
+    text-align: left;
+    position: sticky;
+    top: 0;
+}
+th:hover{
+    cursor: pointer;
+    background: #464343;
+}
+img{
+    color:#fff;
+}
+tbody tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+tbody tr {
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+select{
+    height: 50px;
+    width: 200px;
+    background: #121212;
+    color: #fff;
+    font-family: "lexend";
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    border-radius: 5px;   
+}
+select:hover{
+    cursor: pointer;
+}
+  
